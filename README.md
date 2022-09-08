@@ -9,3 +9,5 @@ SynGAN consists of a generator and a discriminator. The generator is used to syn
 
 # System requirement
  PyTorch package (version 1.09; https://pytorch.org)
+ 
+ This code was adapted from a medical image-to-image translation (https://github.com/Kid-Liet/Reg-GAN) study for the application of synthesizing 7T images from 3T images.
