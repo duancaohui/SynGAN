@@ -1,0 +1,30 @@
+name: P2p
+noise_level: 1
+save_root: 'I:\SynGAN\output\'
+summary_writer: 'summary_writer'
+port: 6019   #  port parameters
+# lamda weight
+Adv_lamda: 1
+P2P_lamda: 100
+Corr_lamda: 20
+
+Smooth_lamda: 5
+
+epoch: 0        # starting epoch
+n_epochs: 150   # How often do you want to display output images during training
+batchSize: 2
+
+# size of the batches
+dataroot: 'I:\SynGAN\Data\paired_fnirt_thenh\train\'     # root directory of the dataset
+val_dataroot: 'I:\SynGAN\Data\paired_fnirt_thenh\test\'
+
+lr: 0.0001                   # initial learning rate
+decay_epoch: 20              # epoch to start linearly decaying the learning rate to 0
+size_x: 288                  # size of the data crop
+size_y: 208                  # size of the data crop
+input_nc: 1         
+output_nc: 1                  
+cuda: True                
+n_cpu: 1
+train: Flase
+test_summary: 'test_summary_writer'
